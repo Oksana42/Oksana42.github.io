@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "TT Lakes";
+    font-style: normal;
+    font-weight: normal;
+    src: local("TT Lakes"),
+    url("font/TTLakes-Bold.ttf") format("ttf");
+    url("font/TTLakes-Medium.ttf") format("ttf");
+    url("font/TTLakes-Regular.ttf") format("ttf");
+}
+
+body {
+    margin: 50px;
+    width: 320px;
+    height: 597px;
+    position: relative;
+    background: #FFFFFF;
+}
+
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu {
+    width: 320px;
+    height: 88px;
+    background: #FFFFFF;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    margin: auto;
+}
+
+.img_Group,
+.img_divider{
+    margin: auto;
+}
+
+.content {
+    width: 320px;
+    height: 509px;
+    left: 0px;
+    top: 88px;
+    background: #F8F8F8;
+
+    margin: auto;
+}
+
+
+
+.top_block {
+    display: inline-flex;
+}
+
+.img_highlight {
+    width: 4px;
+    height: 40px;
+}
+
+.tit_serv {
+    height: 40px;
+    font-size: 28px;
+    color: #1B1C21;
+    line-height: 40px;
+    margin-left: 12px;
+}
+
+.center_block {
+    display: inline-flex;
+}
+
+button {
+    position: relative;
+    background: #FFFFFF;
+
+    text-align: left;
+    padding-left: 16.54px;
+    color: #7E7E82;
+    font-size: 16px;
+}
+
+.btn_devices {
+    width: 246px;
+    height: 40px;
+    margin-left: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    border: 2px solid #B8FFEC;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.btn_services {
+    
+    width: 258px;
+    height: 40px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+
+    /*overflow: hidden;*/
+    /*text-overflow: ellipsis;*/
+}
+
+.text {
+    width: 288px;
+    height: 90px;
+    margin-left: 16px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #1B1C21;
+}
+
+
+.ic_fu {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.img_icon {
+    /*float: left;*/
+    /*margin: 10px;*/
+    /*height: 10.29px;*/
+    /*width: 7.41px;*/
+    margin: auto;
+
+}
+
+.further {
+
+    margin: auto;
+}
+
