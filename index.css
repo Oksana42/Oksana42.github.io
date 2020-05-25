@@ -11,6 +11,7 @@
 body {
     display: flex;
     flex-wrap: wrap;
+
 }
 
 
@@ -20,6 +21,7 @@ body {
     margin: 0 auto;
     padding: 0 15px;
     background: #FFFFFF;
+
 }
 
 @media (max-width: 320px){
@@ -99,6 +101,16 @@ button {
     font-size: 16px;
 }
 
+.wrapper {
+
+
+    display: flex;
+    width: 320px;
+    overflow: hidden;
+    text-overflow: fade;
+
+}
+
 .btn_devices {
     width: 246px;
     height: 40px;
@@ -109,25 +121,19 @@ button {
     box-sizing: border-box;
     border-radius: 6px;
 
-
 }
 
 .btn_services {
-    /*display: flex;*/
-    /*justify-content: space-between;*/
-    /*margin: auto;*/
-
 
     width: 258px;
     height: 40px;
     line-height: 24px;
     letter-spacing: -0.2px;
-
-    /*overflow: hidden;*/
-    /*text-overflow: ellipsis;*/
-
+    border: 0;
+    background: #F8F8F8;
 
 }
+
 
 .text {
     width: 288px;
