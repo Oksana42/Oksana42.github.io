@@ -9,21 +9,27 @@
 }
 
 body {
-    margin: 50px;
-    width: 320px;
-    height: 597px;
-    position: relative;
-    background: #FFFFFF;
-}
-
-
-.services {
     display: flex;
     flex-wrap: wrap;
 }
 
+
+.container {
+    max-width: 320px;
+    height: 597px;
+    margin: 0 auto;
+    padding: 0 15px;
+    background: #FFFFFF;
+}
+
+@media (max-width: 320px){
+    .container {
+        max-width: 320px;
+    }
+}
+
 .menu {
-    width: 320px;
+    /*width: 320px;*/
     height: 88px;
     background: #FFFFFF;
     margin: auto;
@@ -41,7 +47,7 @@ body {
 }
 
 .content {
-    width: 320px;
+    /*width: 320px;*/
     height: 509px;
     left: 0px;
     top: 88px;
@@ -53,12 +59,19 @@ body {
 
 
 .top_block {
-    display: inline-flex;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0;
 }
 
 .img_highlight {
     width: 4px;
     height: 40px;
+    margin-right: 10px;
+    margin-top: 24px;
+    padding: 0;
+
 }
 
 .tit_serv {
@@ -66,16 +79,19 @@ body {
     font-size: 28px;
     color: #1B1C21;
     line-height: 40px;
-    margin-left: 12px;
+    margin-top: 24px;
+    margin-right: auto;
+    padding: 0;
 }
 
 .center_block {
     display: inline-flex;
+
 }
 
 button {
-    position: relative;
-    background: #FFFFFF;
+    /*position: relative;*/
+    /*background: #FFFFFF;*/
 
     text-align: left;
     padding-left: 16.54px;
@@ -92,10 +108,16 @@ button {
     border: 2px solid #B8FFEC;
     box-sizing: border-box;
     border-radius: 6px;
+
+
 }
 
 .btn_services {
-    
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*margin: auto;*/
+
+
     width: 258px;
     height: 40px;
     line-height: 24px;
@@ -103,6 +125,8 @@ button {
 
     /*overflow: hidden;*/
     /*text-overflow: ellipsis;*/
+
+
 }
 
 .text {
@@ -118,21 +142,26 @@ button {
 
 .ic_fu {
     display: flex;
-    margin: auto;
     justify-content: space-between;
+    margin: 15px;
+    padding: 0;
+
 }
 
 .img_icon {
-    /*float: left;*/
-    /*margin: 10px;*/
-    /*height: 10.29px;*/
-    /*width: 7.41px;*/
-    margin: auto;
+    height: 10.29px;
+    width: 7.41px;
+    margin: 15px;
+    padding: 0;
 
 }
 
 .further {
-
-    margin: auto;
+    margin-right: auto;
+    padding: 0;
+    font-size: 16px;
+    line-height: 8px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
 }
 
