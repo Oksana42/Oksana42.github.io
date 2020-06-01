@@ -15,13 +15,17 @@ body {
 
 
 .container {
-    max-width: 784px;
+    /*width: 100%;*/
+    /*max-width: 784px;*/
     height: 504px;
     margin: 0 auto;
     padding: 0 15px;
     background: #FFFFFF;
 
 }
+
+
+
 
 @media screen and (max-width: 320px) {
     .img_call,
@@ -40,30 +44,11 @@ body {
 
     }
 
-    .img_Picture_Copy {
-        width: 320px;
-        height: 230.8;
-        /*margin-right: 250px;*/
-        /*margin-top: 150px;*/
-    }
-
     .ic_fu {
         /*display: inline-flex;*/
         margin-top: 20px;
+    }
 }
-}
-
-/*@media screen and (min-width: 320px) and (max-width: 767px) {*/
-/*    .big_img {*/
-/*        display: inline-flex;*/
-/*    }*/
-/*}*/
-
-/*@media screen and (min-width: 768px) {*/
-/*    .bottom_block {*/
-/*       display: inline-flex;*/
-/*    }*/
-/*}*/
 
 @media screen and (min-width: 1121px){
     .img_call,
@@ -77,6 +62,7 @@ body {
 
 
 .menu {
+
     display: flex;
     justify-content: space-between;
     margin: auto;
@@ -127,7 +113,7 @@ body {
 }
 
 .img_highlight {
-    width: 4px;
+    max-width: 4px;
     height: 40px;
     margin-right: 10px;
     margin-top: 24px;
@@ -163,7 +149,7 @@ button {
 .wrapper {
 
     display: flex;
-    width: 784px;
+    /*width: 784px;*/
     overflow: hidden;
     /*text-overflow: fade;*/
 
@@ -185,7 +171,7 @@ button {
 
     width: 258px;
     height: 40px;
-    line-height: 24px;
+    line-height: 36px;
     letter-spacing: -0.2px;
 
 }
@@ -231,7 +217,6 @@ button {
     justify-content: space-between;
     margin: 15px;
     padding: 0;
-
 }
 
 .img_icon {
@@ -243,7 +228,7 @@ button {
 }
 
 .further {
-    margin-right: auto;
+    margin-right: auto;ƒ
     /*margin-top: 16px;*/
     /*padding: 0;*/
     font-size: 16px;
@@ -252,7 +237,11 @@ button {
     color: #1B1C21;
 }
 
+
 .img_Picture_Copy {
-    width: 360px;
+
+   min-width: 320px;
     height: 259.66;
+
 }
+
