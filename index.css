@@ -24,9 +24,6 @@ body {
 
 }
 
-
-
-
 @media screen and (max-width: 320px) {
     .img_call,
     .img_chat,
@@ -45,9 +42,11 @@ body {
     }
 
     .ic_fu {
-        /*display: inline-flex;*/
-        margin-top: 20px;
+       display: flex;
+        justify-content: space-between;
     }
+
+
 }
 
 @media screen and (min-width: 1121px){
@@ -56,9 +55,31 @@ body {
     .img_profile {
         display: none;
     }
+    .ic_fu {
+        display: flex;
+        justify-content: space-between;
 
+
+    }
+    .img_Picture_Copy {
+        float: right;
+        clear: both;
+    }
 }
 
+@media screen and (max-width: 1121px){
+
+    .ic_fu {
+        display: flex;
+        justify-content: space-between;
+
+
+    }
+    .img_Picture_Copy {
+        float: right;
+        clear: both;
+    }
+}
 
 
 .menu {
@@ -217,6 +238,7 @@ button {
     justify-content: space-between;
     margin: 15px;
     padding: 0;
+
 }
 
 .img_icon {
