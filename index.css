@@ -40,13 +40,30 @@ body {
         min-width: 320px;
 
     }
-
+    .text {
+        display: flex;
+        overflow: hidden;
+        height: 90px;
+    }
     .ic_fu {
        display: flex;
         justify-content: space-between;
+        /*margin: auto;*/
+    }
+    /*.img_Picture_Copy {*/
+    /*    margin-top: -150px;*/
+    /*    min-width: 320px;*/
+    /*    height: 259.66;*/
+
+    /*}*/
     }
 
-
+@media screen and (min-width: 320px) {
+    .img_Picture_Copy {
+        float: right;
+        clear: both;
+        margin-top: -230px;
+    }
 }
 
 @media screen and (min-width: 1121px){
@@ -59,11 +76,11 @@ body {
         display: flex;
         justify-content: space-between;
 
-
     }
     .img_Picture_Copy {
         float: right;
         clear: both;
+        margin-top: -230px;
     }
 }
 
@@ -75,9 +92,13 @@ body {
 
 
     }
-    .img_Picture_Copy {
-        float: right;
-        clear: both;
+
+    .text {
+       max-width: 312px;
+
+        display: flex;
+        overflow: hidden;
+
     }
 }
 
@@ -225,12 +246,15 @@ button {
 
 .text {
     width: 288px;
-    height: 90px;
+    height: 160px;
     margin-left: 16px;
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.2px;
     color: #1B1C21;
+    overflow: hidden;
+
+
 }
 
 .ic_fu {
@@ -250,9 +274,7 @@ button {
 }
 
 .further {
-    margin-right: auto;ƒ
-    /*margin-top: 16px;*/
-    /*padding: 0;*/
+    margin-right: auto;
     font-size: 16px;
     line-height: 8px;
     letter-spacing: -0.2px;
@@ -261,9 +283,12 @@ button {
 
 
 .img_Picture_Copy {
-
+    /*margin-top: -150px;*/
    min-width: 320px;
     height: 259.66;
 
 }
 
+.big_img {
+    margin-top: 20px;
+}
