@@ -236,13 +236,6 @@ body {
     }
 
 
-
-
-
-
-
-
-
     .menu__img {
         max-width: 4px;
         border-top-left-radius: 15px;
@@ -325,21 +318,6 @@ body {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 320px) {
     body {
         overflow: hidden;
@@ -356,9 +334,9 @@ body {
 
     }
 
-    /*.navbar__divide {*/
-    /*    margin-top: 10px;*/
-    /*}*/
+    .navbar__divide {
+        display: none;
+    }
 
     /*.navbar {*/
     /*    display: flex;*/
@@ -374,9 +352,9 @@ body {
 
 
 
-    /*.img--checkstatus {*/
-    /*    display: block;*/
-    /*}*/
+    .img--checkstatus {
+        display: block;
+    }
 
     /*.navbar__group {*/
     /*    margin-left: 40px;*/
@@ -406,16 +384,6 @@ body {
     /*.navbar__menu--right {*/
     /*    display: block;*/
     /*}*/
-
-
-
-    /*.navbar__divider {*/
-    /*    display: none;*/
-    /*}*/
-
-
-
-
 
 
 
@@ -456,6 +424,7 @@ body {
         margin-top: 165px;
         margin-left: -100px;
     }
+}
 
 
 
@@ -463,6 +432,9 @@ body {
 
 
 
+
+
+/*Старые стили*/
 
     /*.content {*/
     /*    !*flex: 0 0 100%;*!*/
@@ -573,5 +545,5 @@ body {
     /*    margin-bottom: 20px;*/
     /*}*/
 
-}
+
 
