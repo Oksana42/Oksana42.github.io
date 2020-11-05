@@ -20,6 +20,7 @@ body {
 
 .wrapper {
     width: 100%;
+    /*max-height: 535px;*/
     max-width: 1121px;
     flex-wrap: wrap;
     background: #F8F8F8;
@@ -30,9 +31,11 @@ body {
     display: none;
 }
 
-.menu {
+.menu__title {
     display: flex;
-    justify-content: space-between;
+}
+
+.menu {
     margin-top: 42px;
 }
 
@@ -48,20 +51,25 @@ body {
     font-size: 28px;
     line-height: 40px;
     letter-spacing: -0.6px;
+
+    flex-grow: 1;
 }
 
 
 .menu__text {
     margin-right: 16px;
     cursor: pointer;
+
+    display: flex;
+    align-items: center;
 }
 
 .button--text {
 
-    max-height: 24px;
     border: none;
     background: none;
     align-items: center;
+    margin-left: 5px;
 
 }
 
@@ -96,7 +104,7 @@ a:hover {
 }
 
 .content__btn-container {
-    margin-right: 40px;
+    margin: 5px 30px 5px 0px;
 }
 
 .button__reviews {
@@ -198,6 +206,7 @@ a:hover {
         margin-right: 16px;
     }
 
+
     .navbar__divider {
         margin-left: 16px;
         margin-bottom: 10px;
@@ -207,7 +216,7 @@ a:hover {
         padding-left: 16px;
     }
 
-    .menu__navbar {
+    .menu__text {
         display: none;
     }
 
@@ -232,10 +241,6 @@ a:hover {
 
     .content__btn--active {
         min-height: 35px;
-    }
-
-    .button--hidden {
-        display: flex;
     }
 
     .button__reviews {
@@ -295,6 +300,7 @@ a:hover {
         display: none;
     }
 
+
     .navbar__group {
         margin-left: 16px;
     }
@@ -318,7 +324,7 @@ a:hover {
     }
 
 
-    .menu__navbar {
+    .menu__text {
         display: none;
     }
 
@@ -340,9 +346,6 @@ a:hover {
 
     }
 
-    .button--hidden {
-        display: flex;
-    }
 
     .content__services-btn {
         overflow-x: scroll;
@@ -427,7 +430,7 @@ a:hover {
     }
 
 
-    .menu__navbar {
+    .menu__text {
         display: none;
     }
 
@@ -449,9 +452,6 @@ a:hover {
         min-height: 35px;
     }
 
-    .button--hidden {
-        display: flex;
-    }
 
     .content__services-btn {
         overflow-x: scroll;
@@ -520,6 +520,7 @@ a:hover {
     }
 
 
+
     .navbar__group {
         margin-left: 16px;
     }
@@ -543,7 +544,7 @@ a:hover {
     }
 
 
-    .menu__navbar {
+    .menu__text {
         display: none;
     }
 
@@ -565,9 +566,6 @@ a:hover {
         min-height: 35px;
     }
 
-    .button--hidden {
-        display: flex;
-    }
 
     .content__services-btn {
         overflow-x: scroll;
@@ -604,6 +602,9 @@ a:hover {
         height: 100%;
 
     }
+
 }
+
+
 
 
