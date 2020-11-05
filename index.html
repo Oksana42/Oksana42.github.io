@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>Макет</title>
-    <link href="index.css" rel="stylesheet">
+    <link href="exmple.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial scale=1.0, maximum scale=1.0, user scalable=0">
 </head>
@@ -33,7 +33,6 @@
 
         <div class="menu">
             <div class="menu__title">
-                <img class="menu__img" src="image/highlight.png" alt="img">
                 <h1 class="title">Услуги и сервисы</h1>
             </div>
 
@@ -55,45 +54,38 @@
         </div>
 
         <div class="content">
-
-            <div class="content__services-btn">
-                <div class="content__btn-container">
-                    <button class="button button--active">Ремонтируемые бренды</button>
-                </div>
-                <div class="content__btn-container">
-                    <button class="button content__btn--active">Ремонтируемые устройства</button>
-                </div>
-                <div class="content__btn-container">
-                    <button class="button button--hidden">Дополнительные услуги</button>
-                </div>
-                <div class="content__btn-container">
-                    <button class="button services--hidden">Цены на услуги</button>
-                </div>
-                <div class="content__btn-container">
-                    <button class="button content--hidden">Адреса сервисных центров</button>
-                </div>
-                <div class="content__btn-container button__price">
-                    <button class="button content--special">Специальные цены</button>
-                </div>
-            </div>
-
             <div class="content__btn-container">
-                <button class="button button__reviews">Отзывы</button>
-            </div>
 
-            <!--        </div>-->
+                <ul class="content__services-btn">
+                    <li class="content__btn-container"><a class="button content__btn--active">Ремонтируемые бренды</a></li>
+                    <li class="content__btn-container"><a class="button button--hidden">Дополнительные услуги</a></li>
+                    <li class="content__btn-container"><a class="button services--hidden">Цены на услуги</a></li>
+                    <li class="content__btn-container"><a class="button content--hidden">Адреса сервисных центров</a></li>
+                    <li class="content__btn-container"><a class="button content--special">Специальные цены</a></li>
+                </ul>
+                <div class="content__btn-container button__price">
+                    <a class=" button button__reviews">Отзывы</a>
+                </div>
+            </div>
 
             <div class="content__bottom">
                 <div class="content__block--left">
 
                     <div class="content__block-mobile">
-                        <p class="content__text">Мы являемся авторизованным<br>сервисным центром по ремонту техники<br>Dell.
+                        <p class="content__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
                             Только у
                             нас
                             вы
-                            можете<br>
+                            можете
                             отремонтировать
-                            свой ноутбук Dell с <br> официальной гарантией производителя.
+                            свой ноутбук Dell с официальной гарантией производителя.
+                        </p>
+                        <p class="content__text"><span class="spn__text">Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                            партнера, что
+                    подтверждает
+                    большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в
+                    свою
+                            очередь, советуют нас родным и близким.</span>
                         </p>
                     </div>
 
@@ -136,16 +128,11 @@
                     </div>
 
                     <div class="content__footer">
-                        <img class="content__img" src="image/icon.png" alt="img">
-                        <p class="footer__text">Читать далее</p>
+                        <a class="footer__text">Читать далее</a>
                     </div>
-                </div>
 
-                <div class="content__block--right">
-                    <div class="img__bottom">
-                        <img class="img--big" src="image/picture_copy.png" alt="img">
-                    </div>
                 </div>
+                <img class="img--big" src="image/picture_copy.png" alt="img">
             </div>
         </div>
     </div>
