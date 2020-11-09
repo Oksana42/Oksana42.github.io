@@ -8,7 +8,6 @@
 </head>
 
 <body>
-
 <div class="wrapper">
 
     <div class="navbar">
@@ -36,14 +35,14 @@
                 <h1 class="title">Услуги и сервисы</h1>
                 <label class="menu__text">
                     Оставить заявку
-                    <button class="button button--text">
+                    <button class="nav__link button--text">
                         <img class="img navbar__img" src="image/repair.png" alt="img">
                     </button>
                 </label>
 
                 <label class="menu__text">
                     Статус ремонта
-                    <button class="button button--text">
+                    <button class="nav__link button--text">
                         <img class="img navbar__img" src="image/checkstatus.png" alt="img">
                     </button>
                 </label>
@@ -51,25 +50,23 @@
         </div>
 
         <div class="content">
-            <div class="content__btn-container">
 
-                <ul class="content__services-btn">
-                    <li class="content__btn-container"><a class="button content__btn--active">Ремонтируемые бренды</a></li>
-                    <li class="content__btn-container"><a class="button button--hidden">Дополнительные услуги</a></li>
-                    <li class="content__btn-container"><a class="button services--hidden">Цены на услуги</a></li>
-                    <li class="content__btn-container"><a class="button content--hidden">Адреса сервисных центров</a></li>
-                    <li class="content__btn-container"><a class="button content--special">Специальные цены</a></li>
+            <div class="nav">
+                <ul class="nav__slidemenu">
+                    <li class="nav__item"><a class="nav__link">Ремонтируемые бренды</a></li>
+                    <li class="nav__item"><a class="nav__link">Дополнительные услуги</a></li>
+                    <li class="nav__item"><a class="nav__link">Цены на услуги</a></li>
+                    <li class="nav__item"><a class="nav__link">Адреса сервисных центров</a></li>
+                    <li class="nav__item"><a class="nav__link">Специальные цены</a></li>
+                    <li class="nav__item"><a class="nav__link">Отзывы</a></li>
                 </ul>
-                <div class="content__btn-container button__price">
-                    <a class=" button button__reviews">Отзывы</a>
-                </div>
             </div>
 
-            <div class="content__bottom">
-                <div class="content__block--left">
+            <div class="section">
+                <div class="section__wrap">
 
-                    <div class="content__block-mobile">
-                        <p class="content__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+                    <div class="section__block-mobile">
+                        <p class="section__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
                             Только у
                             нас
                             вы
@@ -77,7 +74,7 @@
                             отремонтировать
                             свой ноутбук Dell с официальной гарантией производителя.
                         </p>
-                        <p class="content__text"><span class="spn__text">Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                        <p class="section__text"><span class="spn__text">Мы успешно работаем с 1992 года и заслужили репутацию надежного
                             партнера, что
                     подтверждает
                     большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в
@@ -86,8 +83,8 @@
                         </p>
                     </div>
 
-                    <div class="content__block-laptop">
-                        <p class="content__text">Мы являемся авторизованным сервисным<br> центром по ремонту техники
+                    <div class="section__block-laptop">
+                        <p class="section__text">Мы являемся авторизованным сервисным<br> центром по ремонту техники
                             Dell.
                             Только у
                             нас<br>
@@ -96,7 +93,7 @@
                             отремонтировать
                             свой ноутбук<br> Dell с официальной гарантией<br> производителя.
                         </p>
-                        <p class="content__text">Мы успешно работаем с 1992 года и <br>заслужили репутацию надежного
+                        <p class="section__text">Мы успешно работаем с 1992 года и <br>заслужили репутацию надежного
                             партнера<br><span class="spn__text">, что
                     подтверждает
                     большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в
@@ -105,8 +102,8 @@
                         </p>
                     </div>
 
-                    <div class="content__block-desktop">
-                        <p class="content__text">Мы являемся авторизованным сервисным центром по ремонту техники<br>Dell.
+                    <div class="section__block-desktop">
+                        <p class="section__text">Мы являемся авторизованным сервисным центром по ремонту техники<br>Dell.
                             Только у
                             нас
                             вы
@@ -114,7 +111,7 @@
                             отремонтировать
                             свой ноутбук Dell с <br>официальной гарантией производителя.
                         </p>
-                        <p class="content__text">Мы успешно работаем с 1992 года и заслужили репутацию
+                        <p class="section__text">Мы успешно работаем с 1992 года и заслужили репутацию
                             надежного<br>партнера, что
                             подтверждает
                             большое количество постоянных клиентов.<br>Мы гордимся тем, что к нам обращаются по
@@ -123,14 +120,15 @@
                             очередь, советуют нас родным и близким.
                         </p>
                     </div>
-
-                    <div class="content__footer">
-                        <!--                        <img class="content__img" src="image/icon.png" alt="img">-->
-                        <a class="footer__text">Читать далее</a>
+                    <div class="content__icon">
+                        <label class="content__footer">
+                            <a class="footer__text"><span class="footer__icon"></span></a>
+                            Читать далее
+                        </label>
                     </div>
 
                 </div>
-                <img class="img--big" src="image/picture_copy.png" alt="img">
+                <img class="section__img" src="image/picture_copy.png" alt="img">
             </div>
         </div>
     </div>

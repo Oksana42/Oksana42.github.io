@@ -20,7 +20,6 @@ body {
 
 .wrapper {
     width: 100%;
-    /*max-height: 535px;*/
     max-width: 1121px;
     flex-wrap: wrap;
     background: #F8F8F8;
@@ -33,10 +32,11 @@ body {
 
 .menu__title {
     display: flex;
+
 }
 
 .menu {
-    margin-top: 42px;
+    margin-top: 22px;
 }
 
 .title::before {
@@ -51,21 +51,17 @@ body {
     font-size: 28px;
     line-height: 40px;
     letter-spacing: -0.6px;
-
     flex-grow: 1;
 }
-
 
 .menu__text {
     margin-right: 16px;
     cursor: pointer;
-
     display: flex;
     align-items: center;
 }
 
 .button--text {
-
     border: none;
     background: none;
     align-items: center;
@@ -80,21 +76,32 @@ body {
     cursor: pointer;
 }
 
-.content__services-btn {
+.nav {
     display: flex;
 }
 
-ul {
+.nav__slidemenu {
+    display: flex;
+    flex-wrap: wrap;
     list-style:none;
+    margin: 0 0 15px 0;
 }
 
-a:hover {
+.nav__link:hover {
     background: #FFFFFF;
     border: 2px solid #B8FFEC;
     border-radius: 6px;
+    padding: 10px;
 }
 
-.button {
+.nav__link:focus {
+    background: #FFFFFF;
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.nav__link {
     background: none;
     border: none;
     font-size: 16px;
@@ -103,53 +110,46 @@ a:hover {
     cursor: pointer;
 }
 
-.content__btn-container {
-    margin: 5px 30px 5px 0px;
+.nav__item {
+    margin: 15px 30px 15px 0;
 }
 
-.button__reviews {
-    margin-left: 40px;
-}
-
-.content__bottom {
+.section {
     display: flex;
 }
 
-.content__block-mobile,
-.content__block-laptop {
+.section__block-mobile,
+.section__block-laptop {
     display: none;
 }
 
-.content__block-desktop {
+.section__block-desktop {
     display: block;
 }
 
-.content__text {
+.section__text {
     font-size: 14px;
     line-height: 20px;
-    /*letter-spacing: 0.2px;*/
+    letter-spacing: 0.2px;
     color: gray;
     margin-right: 30px;
     margin-left: 25px;
 }
 
-
 .content__footer {
     display: flex;
+    margin: 16px 0 16px 16px;
 }
-
 
 .footer__text {
     font-size: 16px;
-    line-height: 8px;
+    line-height: 24px;
     letter-spacing: -0.2px;
-    color: #1b1c21;
-    margin-left: 30px;
-    margin-bottom: 20px;
-    white-space: nowrap;
+    color: #1B1C21;
+    display: flex;
 }
 
-.footer__text {
+.footer__icon {
     background-image: url(image/icon.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -159,10 +159,10 @@ a:hover {
     margin-right: 8px;
 }
 
-.img--big {
+.section__img {
     height: 307px;
     border-radius: 6px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 
@@ -235,24 +235,17 @@ a:hover {
         margin-top: 20px;
     }
 
-    .content__services-btn {
+    .nav__slidemenu {
+        flex-wrap: nowrap;
         overflow-x: scroll;
     }
 
-    .content__btn--active {
-        min-height: 35px;
-    }
-
-    .button__reviews {
+    .section__block-mobile,
+    .section__block-desktop {
         display: none;
     }
 
-    .content__block-mobile,
-    .content__block-desktop {
-        display: none;
-    }
-
-    .content__block-laptop {
+    .section__block-laptop {
         display: inline;
         max-width: 312px;
         max-height: 160px;
@@ -262,19 +255,14 @@ a:hover {
         display: none;
     }
 
-    .content__text {
+    .section__text {
         display: flex;
     }
 
-
-    .footer__text {
-        white-space: nowrap;
-    }
-
-
-    .img--big {
+    .section__img {
         max-width: 360px;
         max-height: 208px;
+        margin-bottom: 45px;
     }
 }
 
@@ -299,7 +287,6 @@ a:hover {
     .navbar__divider {
         display: none;
     }
-
 
     .navbar__group {
         margin-left: 16px;
@@ -341,39 +328,26 @@ a:hover {
         margin-right: 25px;
     }
 
-    .content__btn--active {
-        min-height: 35px;
-
-    }
-
-
-    .content__services-btn {
+    .nav__slidemenu {
+        flex-wrap: nowrap;
         overflow-x: scroll;
     }
 
-    .button__reviews {
+    .section__block-laptop,
+    .section__block-desktop {
         display: none;
     }
 
-    .content__block-laptop,
-    .content__block-desktop {
-        display: none;
-    }
-
-    .content__block-mobile {
+    .section__block-mobile {
         display: block;
 
     }
 
-    .footer__text {
-        white-space: nowrap;
-    }
-
-    .content__bottom {
+    .section {
         display: block;
     }
 
-    .img--big {
+    .section__img {
         width: 100%;
         height: 100%;
     }
@@ -448,48 +422,35 @@ a:hover {
         margin-right: 25px;
     }
 
-    .content__btn--active {
-        min-height: 35px;
-    }
-
-
-    .content__services-btn {
+    .nav__slidemenu {
+        flex-wrap: nowrap;
         overflow-x: scroll;
     }
 
-    .button__reviews {
+    .section__block-laptop,
+    .section__block-desktop {
         display: none;
     }
 
-    .content__block-laptop,
-    .content__block-desktop {
-        display: none;
-    }
-
-    .content__block-mobile {
+    .section__block-mobile {
         display: block;
     }
 
-    .content__text {
+    .section__text {
         margin-right: 0;
-    }
-
-    .footer__text {
-        white-space: nowrap;
     }
 
     span {
         display: none;
     }
 
-    .content__bottom {
+    .section {
         display: block;
     }
 
-    .img--big {
+    .section__img {
         width: 100%;
         height: 100%;
-
     }
 
 }
@@ -519,8 +480,6 @@ a:hover {
         display: none;
     }
 
-
-
     .navbar__group {
         margin-left: 16px;
     }
@@ -529,7 +488,6 @@ a:hover {
         margin-bottom: 10px;
         margin-left: 16px;
     }
-
 
     .img--call,
     .img--chat,
@@ -548,7 +506,6 @@ a:hover {
         display: none;
     }
 
-
     .menu {
         margin-top: 15px;
     }
@@ -562,48 +519,39 @@ a:hover {
         margin-right: 25px;
     }
 
-    .content__btn--active {
-        min-height: 35px;
-    }
-
-
-    .content__services-btn {
+    .nav__slidemenu {
+        flex-wrap: nowrap;
         overflow-x: scroll;
     }
 
-    .button__reviews {
+    .section__block-laptop,
+    .section__block-desktop {
         display: none;
     }
 
-    .content__block-laptop,
-    .content__block-desktop {
-        display: none;
-    }
-
-    .content__block-mobile {
+    .section__block-mobile {
         display: block;
     }
 
-
-    .footer__text {
-        white-space: nowrap;
+    .section__text {
+        margin-right: 0;
     }
 
     span {
         display: none;
     }
 
-    .content__bottom {
+    .section {
         display: block;
     }
 
-    .img--big {
+    .section__img {
         width: 100%;
         height: 100%;
-
     }
 
 }
+
 
 
 
