@@ -20,7 +20,7 @@ body {
 
 .wrapper {
     width: 100%;
-    max-width: 1121px;
+    max-width: 1120px;
     flex-wrap: wrap;
     background: #F8F8F8;
     margin: 0 auto;
@@ -35,7 +35,7 @@ body {
 
 }
 
-.menu {
+.services__menu {
     margin-top: 22px;
 }
 
@@ -54,80 +54,84 @@ body {
     flex-grow: 1;
 }
 
-.menu__text {
+.menu__button {
     margin-right: 16px;
     cursor: pointer;
     display: flex;
     align-items: center;
 }
 
-.button--text {
+.btn {
+    display: contents;
     border: none;
     background: none;
     align-items: center;
     margin-left: 5px;
-
 }
 
 .img {
     border-radius: 50%;
     background-color: #FF3E79;
     padding: 8px;
+    margin: 5px;
     cursor: pointer;
 }
 
-.nav {
-    display: flex;
-}
 
 .nav__slidemenu {
     display: flex;
     flex-wrap: wrap;
     list-style:none;
-    margin: 0 0 15px 0;
+    overflow: auto;
+    padding: 0;
+    margin: 15px;
 }
 
 .nav__link:hover {
     background: #FFFFFF;
-    border: 2px solid #B8FFEC;
+    border: 1px solid #B8FFEC;
     border-radius: 6px;
-    padding: 7px;
+
 }
 
 .nav__link:focus {
     background: #FFFFFF;
-    border: 2px solid #B8FFEC;
+    border: 1px solid #B8FFEC;
     border-radius: 6px;
-    padding: 7px;
+
 }
 
 .nav__link {
-    background: none;
-    border: none;
     font-size: 16px;
+    border: 1px solid transparent;
+    padding: 8px 16px 8px 16px;
     white-space: nowrap;
     color: #7E7E82;
     cursor: pointer;
 }
 
 .nav__item {
-    margin: 15px 30px 15px 0;
-}
-
-.section {
     display: flex;
 }
 
-.section__block-mobile,
-.section__block-laptop {
+li:last-child {
+    margin: 0;
+}
+
+.services__description {
+    display: flex;
+}
+
+.services__block--mobile,
+.services__block--laptop {
     display: none;
 }
 
-.section__block-desktop {
+.services__block--desktop {
     display: block;
 }
 
-.section__text {
+.services__text {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.2px;
@@ -139,6 +143,7 @@ body {
 .content__footer {
     display: flex;
     margin: 16px 0 16px 16px;
+    cursor: pointer;
 }
 
 .footer__text {
@@ -147,6 +152,7 @@ body {
     letter-spacing: -0.2px;
     color: #1B1C21;
     display: flex;
+    cursor: pointer;
 }
 
 .footer__icon {
@@ -157,10 +163,10 @@ body {
     height: 24px;
     display: block;
     margin-right: 8px;
+    cursor: pointer;
 }
 
-
-.section__img {
+.services__img {
     height: 307px;
     border-radius: 6px;
     margin-bottom: 35px;
@@ -168,7 +174,6 @@ body {
 
 
 @media screen and (min-width: 768px) and (max-width: 1120px) {
-
     .wrapper {
         max-height: 504px;
         max-width: 784px;
@@ -180,6 +185,9 @@ body {
         justify-content: space-between;
         align-items: center;
         background: #FFFFFF;
+    }
+
+    .wrapper__navbar{
         padding: 16px 0;
     }
 
@@ -188,7 +196,7 @@ body {
         margin-left: 16px;
     }
 
-    .navbar__group {
+    .navbar__logo {
         margin-left: 16px;
     }
 
@@ -196,12 +204,6 @@ body {
         margin-right: 16px;
         margin-left: 16px;
     }
-
-    .navbar__menu--center {
-        margin-left: auto;
-        margin-right: 16px;
-    }
-
 
     .img--chat {
         margin-left: 16px;
@@ -218,7 +220,7 @@ body {
         padding-left: 16px;
     }
 
-    .menu__text {
+    .menu__button {
         display: none;
     }
 
@@ -233,7 +235,7 @@ body {
     }
 
 
-    .menu {
+    .services__menu {
         margin-top: 20px;
     }
 
@@ -242,12 +244,16 @@ body {
         overflow-x: scroll;
     }
 
-    .section__block-mobile,
-    .section__block-desktop {
+    li:last-child {
+        margin: 0;
+    }
+
+    .services__block--mobile,
+    .services__block--desktop {
         display: none;
     }
 
-    .section__block-laptop {
+    .services__block--laptop {
         display: inline;
         max-width: 312px;
         max-height: 160px;
@@ -257,11 +263,11 @@ body {
         display: none;
     }
 
-    .section__text {
+    .services__text {
         display: flex;
     }
 
-    .section__img {
+    .services__img {
         max-width: 360px;
         max-height: 208px;
         margin-bottom: 45px;
@@ -269,7 +275,7 @@ body {
 }
 
 
-@media screen and (min-width: 540px) and (max-width: 767px) {
+@media screen and (min-width: 568px) and (max-width: 768px) {
 
     .wrapper {
         width: 100%;
@@ -282,15 +288,18 @@ body {
         justify-content: space-between;
         align-items: center;
         background: #FFFFFF;
-        padding: 16px 0;
     }
 
+    .wrapper__navbar{
+        padding: 16px 0;
+    }
 
     .navbar__divider {
         display: none;
     }
 
-    .navbar__group {
+
+    .navbar__logo {
         margin-left: 16px;
     }
 
@@ -299,6 +308,9 @@ body {
         margin-left: 16px;
     }
 
+    .navbar__divider2 {
+        padding-right: 16px;
+    }
 
     .img--call,
     .img--chat,
@@ -313,11 +325,11 @@ body {
     }
 
 
-    .menu__text {
+    .menu__button {
         display: none;
     }
 
-    .menu {
+    .services__menu {
         margin-top: 20px;
     }
 
@@ -335,33 +347,32 @@ body {
         overflow-x: scroll;
     }
 
-    .section__block-laptop,
-    .section__block-desktop {
+    .services__block--laptop,
+    .services__block--desktop {
         display: none;
     }
 
-    .section__block-mobile {
+    .services__block--mobile {
         display: block;
 
     }
 
-    .section {
-        display: block;
+    span {
+        display: none;
     }
 
-    .section__img {
+    .services__description {
+        display: flex;
+    }
+
+    .services__img {
         width: 100%;
         height: 100%;
     }
 
 }
 
-@media screen and (min-width: 320px) and (max-width: 539px) {
-    .body {
-        margin: 0 auto;
-        max-width: 1440px;
-        position: relative;
-    }
+@media screen and (min-width: 320px) and (max-width: 568px) {
 
     .wrapper {
         margin: 0 auto;
@@ -373,17 +384,17 @@ body {
         justify-content: space-between;
         align-items: center;
         background: #FFFFFF;
-        padding: 16px 0;
     }
 
+    .wrapper__navbar{
+        padding: 16px 0;
+    }
 
     .navbar__divider {
         display: none;
     }
 
-
-
-    .navbar__group {
+    .navbar__logo {
         margin-left: 16px;
     }
 
@@ -391,7 +402,6 @@ body {
         margin-bottom: 10px;
         margin-left: 16px;
     }
-
 
     .img--call,
     .img--chat,
@@ -406,12 +416,12 @@ body {
     }
 
 
-    .menu__text {
+    .menu__button {
         display: none;
     }
 
 
-    .menu {
+    .services__menu {
         margin-top: 15px;
     }
 
@@ -429,28 +439,28 @@ body {
         overflow-x: scroll;
     }
 
-    .section__block-laptop,
-    .section__block-desktop {
+    .services__block--laptop,
+    .services__block--desktop {
         display: none;
     }
 
-    .section__block-mobile {
+    .services__block--mobile {
         display: block;
     }
 
-    .section__text {
-        margin-right: 0;
+    .services__text {
+        margin-right: 5px;
     }
 
     span {
         display: none;
     }
 
-    .section {
+    .services__description {
         display: block;
     }
 
-    .section__img {
+    .services__img {
         width: 100%;
         height: 100%;
     }
@@ -458,31 +468,27 @@ body {
 }
 
 @media screen and (max-width: 320px) {
-    .body {
-        margin: 0 auto;
-        max-width: 1440px;
-        position: relative;
-    }
 
     .wrapper {
         margin: 0 auto;
     }
-
 
     .navbar {
         display: flex;
         justify-content: space-between;
         align-items: center;
         background: #FFFFFF;
-        padding: 16px 0;
     }
 
+    .wrapper__navbar{
+        padding: 16px 0;
+    }
 
     .navbar__divider {
         display: none;
     }
 
-    .navbar__group {
+    .navbar__logo {
         margin-left: 16px;
     }
 
@@ -504,11 +510,11 @@ body {
     }
 
 
-    .menu__text {
+    .menu__button {
         display: none;
     }
 
-    .menu {
+    .services__menu {
         margin-top: 15px;
     }
 
@@ -526,16 +532,16 @@ body {
         overflow-x: scroll;
     }
 
-    .section__block-laptop,
-    .section__block-desktop {
+    .services__block--laptop,
+    .services__block--desktop {
         display: none;
     }
 
-    .section__block-mobile {
+    .services__block--mobile {
         display: block;
     }
 
-    .section__text {
+    .services__text {
         margin-right: 0;
     }
 
@@ -543,17 +549,16 @@ body {
         display: none;
     }
 
-    .section {
+    .services__description {
         display: block;
     }
 
-    .section__img {
+    .services__img {
         width: 100%;
         height: 100%;
     }
 
 }
-
 
 
 

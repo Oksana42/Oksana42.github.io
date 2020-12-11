@@ -11,39 +11,54 @@
 
 <div class="wrapper">
 
-    <div class="navbar">
-        <div class="navbar__menu navbar__menu--left">
-            <img class="img navbar__burger" src="image/burger.png" alt="img">
-            <img class="navbar__divider" src="image/divider.png" alt="img">
-            <img class="navbar__group" src="image/group.png" alt="img">
+    <div class="navbar wrapper__navbar">
+        <div class="navbar__item">
+            <button class="btn">
+                <img class="img navbar__burger" src="image/burger.png" alt="img">
+            </button>
+            <button class="btn">
+                <img class="navbar__divider" src="image/divider.png" alt="img">
+            </button>
+            <button class="btn">
+                <a class="navbar__logo" href="/"><img src="image/group.png" alt="CPS"></a>
+            </button>
         </div>
-        <div class="navbar__menu navbar__menu--center">
-            <img class="img img--call" src="image/call.png" alt="img">
-            <img class="img img--chat" src="image/chat.png" alt="img">
-            <img class="img img--profile" src="image/profile.png" alt="img">
-            <img class="navbar__divider2" src="image/divider.png" alt="img">
-        </div>
-        <div class="navbar__menu navbar__menu--right">
-            <img class="img img--repair" src="image/repair.png" alt="img">
-            <img class="img img--checkstatus" src="image/checkstatus.png" alt="img">
+        <div class="navbar__item">
+            <button class="btn">
+                <img class="img img--call" src="image/call.png" alt="img">
+            </button>
+            <button class="btn">
+                <img class="img img--chat" src="image/chat.png" alt="img">
+            </button>
+            <button class="btn">
+                <img class="img img--profile" src="image/profile.png" alt="img">
+            </button>
+            <button class="btn">
+                <img class="navbar__divider2" src="image/divider.png" alt="img">
+            </button>
+            <button class="btn">
+                <img class="img img--repair" src="image/repair.png" alt="img">
+            </button>
+            <button class="btn">
+                <img class="img img--checkstatus" src="image/checkstatus.png" alt="img">
+            </button>
         </div>
     </div>
 
-    <div class="container">
+    <div class="services">
 
-        <div class="menu">
+        <div class="services__menu">
             <div class="menu__title">
                 <h1 class="title">Услуги и сервисы</h1>
-                <label class="menu__text">
+                <label class="menu__button">
                     Оставить заявку
-                    <button class="button--text">
+                    <button class="btn">
                         <img class="img navbar__img" src="image/repair.png" alt="img">
                     </button>
                 </label>
-
-                <label class="menu__text">
+                <label class="menu__button">
                     Статус ремонта
-                    <button class="button--text">
+                    <button class="btn">
                         <img class="img navbar__img" src="image/checkstatus.png" alt="img">
                     </button>
                 </label>
@@ -63,11 +78,11 @@
                 </ul>
             </div>
 
-            <div class="section">
-                <div class="section__wrap">
+            <div class="services__description">
 
-                    <div class="section__block-mobile">
-                        <p class="section__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+                <div class="services__about">
+                    <div class="services__block--mobile">
+                        <p class="services__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
                             Только у
                             нас
                             вы
@@ -75,7 +90,7 @@
                             отремонтировать
                             свой ноутбук Dell с официальной гарантией производителя.
                         </p>
-                        <p class="section__text"><span class="spn__text">Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                        <p class="services__text"><span class="spn__text">Мы успешно работаем с 1992 года и заслужили репутацию надежного
                             партнера, что
                     подтверждает
                     большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в
@@ -83,9 +98,8 @@
                             очередь, советуют нас родным и близким.</span>
                         </p>
                     </div>
-
-                    <div class="section__block-laptop">
-                        <p class="section__text">Мы являемся авторизованным сервисным<br> центром по ремонту техники
+                    <div class="services__block--laptop">
+                        <p class="services__text">Мы являемся авторизованным сервисным<br> центром по ремонту техники
                             Dell.
                             Только у
                             нас<br>
@@ -94,7 +108,7 @@
                             отремонтировать
                             свой ноутбук<br> Dell с официальной гарантией<br> производителя.
                         </p>
-                        <p class="section__text">Мы успешно работаем с 1992 года и <br>заслужили репутацию надежного
+                        <p class="services__text">Мы успешно работаем с 1992 года и <br>заслужили репутацию надежного
                             партнера<br><span class="spn__text">, что
                     подтверждает
                     большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в
@@ -102,9 +116,8 @@
                     очередь, советуют нас родным и близким.</span>
                         </p>
                     </div>
-
-                    <div class="section__block-desktop">
-                        <p class="section__text">Мы являемся авторизованным сервисным центром по ремонту техники<br>Dell.
+                    <div class="services__block--desktop">
+                        <p class="services__text">Мы являемся авторизованным сервисным центром по ремонту техники<br>Dell.
                             Только у
                             нас
                             вы
@@ -112,7 +125,7 @@
                             отремонтировать
                             свой ноутбук Dell с <br>официальной гарантией производителя.
                         </p>
-                        <p class="section__text">Мы успешно работаем с 1992 года и заслужили репутацию
+                        <p class="services__text">Мы успешно работаем с 1992 года и заслужили репутацию
                             надежного<br>партнера, что
                             подтверждает
                             большое количество постоянных клиентов.<br>Мы гордимся тем, что к нам обращаются по
@@ -121,15 +134,17 @@
                             очередь, советуют нас родным и близким.
                         </p>
                     </div>
+
                     <div class="content__icon">
                         <label class="content__footer">
-                            <a class="footer__text"><span class="footer__icon"></span></a>
+                            <button class="btn">
+                                <a class="footer__icon"></a>
+                            </button>
                             Читать далее
                         </label>
                     </div>
-
                 </div>
-                <img class="section__img" src="image/picture_copy.png" alt="img">
+                <img class="services__img" src="image/picture_copy.png" alt="img">
             </div>
         </div>
     </div>
