@@ -1,0 +1,185 @@
+@font-face {
+    font-family: "TT Lakes";
+    font-style: normal;
+    font-weight: normal;
+    src: local("TT Lakes"),
+    url("font/TTLakes-Bold.ttf") format("ttf");
+    url("font/TTLakes-Medium.ttf") format("ttf");
+    url("font/TTLakes-Regular.ttf") format("ttf");
+}
+
+html {
+    font-family: "TT Lakes", sans-serif;
+}
+
+body {
+    display: flex;
+    background: #f2f2f2;
+    margin: auto;
+}
+
+.sidebar {
+    width: 320px;
+    height: 1024px;
+    background: #FFFFFF;
+    box-shadow: -2px 0 4px rgba(69, 79, 126, 0.02), 16px 0 52px rgba(14, 24, 80, 0.2);
+}
+
+.sidebar__menu-left {
+    margin-top: 20px;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.btn {
+    display: contents;
+    border: none;
+    background: none;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.img {
+    border-radius: 50%;
+    background-color: #FF3E79;
+    padding: 8px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.menu-icon__close {
+    margin-left: 20px;
+}
+
+
+.menu-icon__checkstatus {
+    margin-left: 100px;
+    margin-top: 32px;
+
+}
+
+.menu-icon__checkstatus:hover {
+    transform: scale(1.5);
+}
+
+
+.contact__nav {
+    margin-top: 50px;
+}
+
+.nav__slidemenu {
+    flex-wrap: wrap;
+    list-style:none;
+    padding: 0;
+    margin: 25px;
+    position: relative;
+}
+
+.nav__link--choice::before {
+    content: "";
+    height: 32px;
+    border: 4px solid #41F6D7;
+    border-radius: 4px;
+    position: absolute;
+    top: -10px;
+    left: -29px;
+}
+
+.nav__item {
+    margin-top: 20px;
+}
+
+.nav__link {
+    cursor: pointer;
+
+}
+
+.nav__link:hover {
+    color: #7E7E82;
+
+}
+
+.nav__link:focus {
+    color: #7E7E82;
+
+}
+
+.nav__link--choice {
+    color: #7E7E82;
+}
+
+.contact-bottom {
+    margin-top: 350px;
+}
+
+.info {
+    margin-left: 20px;
+}
+
+.contact-mail {
+    margin-top: 10px;
+}
+
+.contact__link-mail {
+    color: #7E7E82;
+    text-decoration: none;
+}
+
+.contact-phone {
+    margin-top: 10px;
+}
+
+
+
+@keyframes call-animation {
+    15% {
+        transform: translateX(9px);
+    }
+    30% {
+        transform: translateX(-9px);
+    }
+    40% {
+        transform: translateX(6px);
+    }
+    50% {
+        transform: translateX(-6px);
+    }
+    65% {
+        transform: translateX(3px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.contact__call:hover {
+    animation: call-animation 0.5s ease;
+    animation-iteration-count: 2;
+}
+
+
+
+.contact__link-phone {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1B1C21;
+    text-decoration: none;
+}
+
+.language {
+    margin-top: 70px;
+    margin-left: 20px;
+}
+
+.language__link {
+    color: #1B1C21;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.language__link:first-child {
+    color: #7E7E82;
+
+}

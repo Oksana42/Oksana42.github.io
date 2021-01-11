@@ -3,7 +3,7 @@
     font-style: normal;
     font-weight: normal;
     src: local("TT Lakes"),
-    url("font/TTLakes-Bold.ttf") format("ttf");
+    url("../font/TTLakes-Bold.ttf") format("ttf");
 url("font/TTLakes-Medium.ttf") format("ttf");
 url("font/TTLakes-Regular.ttf") format("ttf");
 }
@@ -156,7 +156,7 @@ li:last-child {
 }
 
 .footer__icon {
-    background-image: url(image/icon.png);
+    background-image: url(../image/icon.png);
     background-repeat: no-repeat;
     background-position: center;
     width: 24px;
