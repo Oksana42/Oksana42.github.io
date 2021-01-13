@@ -20,9 +20,15 @@ body {
 
 .sidebar {
     width: 320px;
-    height: 1024px;
+    height: 100%;
+    position: absolute;
     background: #FFFFFF;
     box-shadow: -2px 0 4px rgba(69, 79, 126, 0.02), 16px 0 52px rgba(14, 24, 80, 0.2);
+
+}
+
+.sidebar__wrapper {
+    background: #FFFFFF;
 }
 
 .sidebar__menu-left {
@@ -49,6 +55,18 @@ body {
     cursor: pointer;
 }
 
+.icon--avtive:hover {
+    opacity: 0.6;
+    transform: scale(1.1);
+    transition: opacity, scale 1s, 1s;
+}
+
+.icon--avtive:active {
+    opacity: 1;
+    transform: scale(0.9);
+    transition: opacity, scale 0.1s, 0.1s;
+}
+
 .menu-icon__close {
     margin-left: 20px;
 }
@@ -61,7 +79,7 @@ body {
 }
 
 .menu-icon__checkstatus:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 
@@ -98,8 +116,11 @@ body {
 
 .nav__link:hover {
     color: #7E7E82;
-
 }
+
+/*.nav__link:hover::before {*/
+/*    opacity: 1;*/
+/*}*/
 
 .nav__link:focus {
     color: #7E7E82;
@@ -123,7 +144,7 @@ body {
 }
 
 .contact__link-mail {
-    color: #7E7E82;
+    color: #1B1C21;
     text-decoration: none;
 }
 
@@ -131,7 +152,9 @@ body {
     margin-top: 10px;
 }
 
-
+.contact__link:hover {
+    color: #7E7E82;
+}
 
 @keyframes call-animation {
     15% {
@@ -181,5 +204,8 @@ body {
 
 .language__link:first-child {
     color: #7E7E82;
+}
 
+.language__link:hover {
+    color: #7E7E82;
 }
