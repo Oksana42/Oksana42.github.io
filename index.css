@@ -23,7 +23,7 @@ body {
     height: 100%;
     position: absolute;
     background: #FFFFFF;
-    box-shadow: -2px 0 4px rgba(69, 79, 126, 0.02), 16px 0 52px rgba(14, 24, 80, 0.2);
+    /*box-shadow: -2px 0 4px rgba(69, 79, 126, 0.02), 16px 0 52px rgba(14, 24, 80, 0.2);*/
 
 }
 
@@ -70,7 +70,6 @@ body {
 .menu-icon__close {
     margin-left: 20px;
 }
-
 
 .menu-icon__checkstatus {
     margin-left: 100px;
@@ -181,7 +180,6 @@ body {
     animation: call-animation 0.5s ease;
     animation-iteration-count: 2;
 }
-
 
 
 .contact__link-phone {
