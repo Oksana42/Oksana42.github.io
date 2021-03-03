@@ -1,0 +1,351 @@
+@font-face {
+    font-family: "TT Lakes";
+    font-style: normal;
+    font-weight: normal;
+    src: local("TT Lakes"),
+    url("../block 1.3/font/TTLakes-Bold.ttf") format("ttf");
+url("font/TTLakes-Medium.ttf") format("ttf");
+url("font/TTLakes-Regular.ttf") format("ttf");
+}
+
+html {
+    font-family: "TT Lakes", sans-serif;
+}
+
+body {
+    display: flex;
+    margin: auto;
+}
+
+.brend {
+    width: 100%;
+    height: 100%;
+    background-color: #F8F8F8;
+}
+
+.line {
+    background: #D9FFF5;
+    width: auto;
+    height: 1px;
+    margin: 0 auto;
+}
+
+.title-brend {
+    font-size: 16px;
+    line-height: 24px;
+    color: #7E7E82;
+    background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    margin: 0;
+    padding: 16px 0 16px 16px;
+}
+
+.brend-slider__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn-brend {
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.slider__item {
+    margin: 5px 16px 5px 16px;
+    width: 240px !important;
+    height: 72px !important;
+}
+
+.brend__link {
+    /*width: 206px;*/
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.brand__logo {
+    /*margin-right: 50px;*/
+}
+
+.brand__arrow-icon {
+    /*margin-left: 5px;*/
+}
+
+
+.brend-label {
+    display: flex;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 24px;
+
+    /*margin: 16px 0 16px 16px;*/
+
+}
+
+.btn-icon {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: #F8F8F8;
+    padding: 0;
+    cursor: pointer;
+
+    /*width: 24px;*/
+    /*height: 24px;*/
+}
+
+.link-icon {
+    background-image: url(./img/icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    display: block;
+    cursor: pointer;
+    margin-right: 8px;
+    margin-bottom: 10px;
+}
+
+.brend-icon {
+    display: block;
+    margin: 16px 0 16px 16px;
+}
+
+.swiper-pagination {
+    display: none;
+}
+
+.brand__item--visibility {
+    display: none;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1120px) {
+
+    .brend {
+        width: 100%;
+        height: 100%;
+        background-color: #F8F8F8;
+    }
+
+    .line {
+        background: #D9FFF5;
+        width: auto;
+        height: 1px;
+        margin: 0 auto;
+    }
+
+    .title-brend {
+        font-size: 16px;
+        line-height: 24px;
+        color: #7E7E82;
+        background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+        margin: 0;
+        padding: 16px 0 16px 16px;
+    }
+
+    .brend-slider__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .btn-brend {
+        background: #FFFFFF;
+        border: 1px solid #EAEAEA;
+        box-sizing: border-box;
+        border-radius: 6px;
+    }
+
+    .slider__item {
+        margin: 5px 16px 5px 16px;
+        width: 240px !important;
+        height: 72px !important;
+    }
+
+    .brend__link {
+        /*width: 206px;*/
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .brand__logo {
+        /*margin-right: 50px;*/
+    }
+
+    .brand__arrow-icon {
+        /*margin-left: 5px;*/
+    }
+
+
+    .brend-label {
+        display: flex;
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 24px;
+
+        /*margin: 16px 0 16px 16px;*/
+
+    }
+
+    .btn-icon {
+        display: flex;
+        align-items: center;
+        border: none;
+        background-color: #F8F8F8;
+        padding: 0;
+        cursor: pointer;
+
+        /*width: 24px;*/
+        /*height: 24px;*/
+    }
+
+    .link-icon {
+        background-image: url(./img/icon.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 24px;
+        height: 24px;
+        display: block;
+        cursor: pointer;
+        margin-right: 8px;
+        margin-bottom: 10px;
+    }
+
+    .brend-icon {
+        display: block;
+        margin: 16px 0 16px 16px;
+    }
+
+    .swiper-pagination {
+        display: none;
+    }
+
+    .brand__item--visibility {
+        display: none;
+    }
+
+
+}
+
+@media screen and (min-width: 568px) and (max-width: 768px) {
+
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 568px) {
+
+    .brend-slider {
+        position: relative;
+        overflow: hidden;
+
+        /*margin-left: auto;*/
+        /*margin-right: auto;*/
+        /*padding: 0;*/
+        /*z-index: 1;*/
+    }
+
+    .brend-slider .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        /*line-height: 20px;*/
+        /*font-size: 14px;*/
+        background: #B5B6BC;
+        /*margin-bottom: 20px;*/
+    }
+
+    .swiper-pagination {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .swiper-wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-top: 24px;
+    }
+
+    .brend-slider__wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        margin-bottom: 40px;
+
+    }
+
+    .slider__item {
+        flex: 0 0 100%;
+        max-width: 240px;
+    }
+
+    .brend-icon {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .brend-slider {
+        position: relative;
+        overflow: hidden;
+
+        /*margin-left: auto;*/
+        /*margin-right: auto;*/
+        /*padding: 0;*/
+        /*z-index: 1;*/
+    }
+
+    .brend-slider .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        /*line-height: 20px;*/
+        /*font-size: 14px;*/
+        background: #B5B6BC;
+        /*margin-bottom: 20px;*/
+    }
+
+    .swiper-pagination {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .swiper-wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-top: 24px;
+    }
+
+    .brend-slider__wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        margin-bottom: 40px;
+
+    }
+
+    .slider__item {
+        flex: 0 0 100%;
+        max-width: 240px;
+    }
+
+    .brend-icon {
+        display: none;
+    }
+
+}
+
+
