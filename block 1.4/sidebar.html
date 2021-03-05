@@ -4,31 +4,32 @@
     <meta charset="UTF-8">
     <title>Блок 1.4</title>
     <link href="sidebar.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial scale=1.0, maximum scale=1.0, user scalable=0">
 </head>
 <body>
 
 <div class="sidebar">
-    <div class="sidebar__wrapper">
-        <div class="wrapper">
+    <div class="sidebar__conteiner">
+        <div class="sidebar__top">
             <div class="sidebar__menu-left">
                 <button class="btn">
-                    <img class="img menu-icon__close" src="image/close.png" alt="img">
+                    <img class="img--avtive" src="image/close.svg" alt="Закрыть">
                 </button>
-                <button class="btn">
-                    <a class="menu-icon__logo" href="/"><img src="image/group.png" alt="CPS"></a>
-                </button>
+                    <a class="menu-link__logo" href="/">
+                        <img class="menu__logo" src="image/logo.svg" alt="CPS">
+                    </a>
             </div>
             <div class="sidebar__menu-right">
                 <button class="btn">
-                    <img class="img menu-icon__checkstatus" src="image/checkstatus.png" alt="img">
+                    <img class="menu__search img--avtive" src="image/search.svg" alt="Поиск">
                 </button>
             </div>
         </div>
         <div class="contact">
 
             <div class="contact__nav">
-                <ul class="nav__slidemenu">
-                    <li class="nav__item"><a class="nav__link nav__link--choice">Ремонт техники</a></li>
+                <ul class="nav sidebar__nav">
+                    <li class="nav__item"><a class="nav__link nav__link--active">Ремонт техники</a></li>
                     <li class="nav__item"><a class="nav__link">Услуги и сервисы</a></li>
                     <li class="nav__item"><a class="nav__link">Корпоративным клиентами</a></li>
                     <li class="nav__item"><a class="nav__link">Продавцам техники</a></li>
@@ -39,29 +40,29 @@
                 </ul>
             </div>
 
-            <div class="contact-bottom">
-                <div class="info">
-                    <div class="contact-icon">
+            <div class="contact__bottom">
+                <div class="contact__info">
+                    <div class="contact__icon">
                         <button class="btn">
-                            <img class="img contact__call" src="image/call.png" alt="img">
+                            <img class="contact__call img--avtive" src="image/call.svg" alt="Звонок">
                         </button>
                         <button class="btn">
-                            <img class="img contact__chat" src="image/chat.png" alt="img">
+                            <img class="img--avtive" src="image/chat.svg" alt="Чат">
                         </button>
                         <button class="btn">
-                            <img class="img contactn__profile" src="image/profile.png" alt="img">
+                            <img class="img--avtive" src="image/profile.svg" alt="Профиль">
                         </button>
                     </div>
 
-                    <div class="contact-mail">
-                        <a class="contact__link-mail" href="/">mail@cps.com</a>
+                    <div class="contact__mail">
+                        <a class="contact__link-mail contact__link" href="/">mail@cps.com</a>
                     </div>
-                    <div class="contact-phone">
-                        <a class="contact__link-phone" href="/">8 800 890 8900</a>
+                    <div class="contact__phone">
+                        <a class="contact__link-phone contact__link" href="/">8 800 890 8900</a>
                     </div>
                 </div>
 
-                <div class="language">
+                <div class="contact__language">
                     <a class="language__link" href="/">RU</a>
                     <a class="language__link" href="/">EN</a>
                     <a class="language__link" href="/">CH</a>
