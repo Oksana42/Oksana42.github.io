@@ -21,9 +21,9 @@ body {
 
 .sidebar {
     width: 320px;
-    /*height: 1024px;*/
+    max-height: 1024px;
     /*background: #FFFFFF;*/
-    /*box-shadow: -2px 0 4px rgba(69, 79, 126, 0.02), 16px 0 52px rgba(14, 24, 80, 0.2);*/
+    box-shadow: -2px 0 4px rgba(69, 79, 126, 0.02), 16px 0 52px rgba(14, 24, 80, 0.2);
 }
 
 .sidebar__conteiner {
@@ -33,7 +33,6 @@ body {
 .sidebar__top {
     display: flex;
     justify-content: space-between;
-    /*align-items: center;*/
 }
 
 .sidebar__menu-left {
@@ -79,7 +78,7 @@ body {
 }
 
 .contact__nav {
-    margin: 25px 0 232px 5px;
+    margin: 25px 0 270px 5px;
     /*margin: 10px 5px 10px 5px;*/
 }
 
@@ -197,7 +196,7 @@ body {
 }
 
 
-@media screen and (max-height: 731px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
 
     .contact__nav {
         margin-top: 40px;
@@ -208,31 +207,10 @@ body {
         margin-top: 10px;
         padding: 0;
 
-        /*margin-top: 30px;*/
     }
 
     .contact__bottom {
         margin-top: 20px;
-    }
-
-}
-
-@media screen and (max-height: 568px) {
-
-    .contact__nav {
-        margin-bottom: 20px;
-    }
-
-    .nav__item {
-        margin-top: 10px;
-    }
-
-    .contact__bottom {
-        margin-top: 10px;
-    }
-
-    .contact__language {
-        margin-top: 5px;
     }
 
 }
