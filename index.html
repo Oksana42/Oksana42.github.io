@@ -2,76 +2,109 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Блок 1.4</title>
+    <title>block 1.5</title>
     <link href="index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <meta name="viewport" content="width=device-width, initial scale=1.0, maximum scale=1.0, user scalable=0">
 </head>
 <body>
 
-<div class="sidebar">
-    <div class="sidebar__conteiner">
-        <div class="sidebar__top">
-            <div class="sidebar__menu-left">
-                <button class="btn">
-                    <img class="img--avtive" src="block%201.4/image/close.svg" alt="Закрыть">
-                </button>
-                <a class="menu-link__logo" href="/">
-                    <img class="menu__logo" src="block%201.4/image/logo.svg" alt="CPS">
-                </a>
-            </div>
-            <div class="sidebar__menu-right">
-                <button class="btn">
-                    <img class="menu__search img--avtive" src="block%201.4/image/search.svg" alt="Поиск">
-                </button>
-            </div>
-        </div>
-        <div class="contact">
+<div class="brend">
 
-            <div class="contact__nav">
-                <ul class="nav sidebar__nav">
-                    <li class="nav__item"><a class="nav__link nav__link--active">Ремонт техники</a></li>
-                    <li class="nav__item"><a class="nav__link">Услуги и сервисы</a></li>
-                    <li class="nav__item"><a class="nav__link">Корпоративным клиентами</a></li>
-                    <li class="nav__item"><a class="nav__link">Продавцам техники</a></li>
-                    <li class="nav__item"><a class="nav__link">Партнерам</a></li>
-                    <li class="nav__item"><a class="nav__link">Производителям</a></li>
-                    <li class="nav__item"><a class="nav__link">Наши сервисные центры</a></li>
-                    <li class="nav__item"><a class="nav__link">Контакты</a></li>
-                </ul>
-            </div>
-
-            <div class="contact__bottom">
-                <div class="contact__info">
-                    <div class="contact__icon">
-                        <button class="btn">
-                            <img class="contact__call img--avtive" src="block%201.4/image/call.svg" alt="Звонок">
-                        </button>
-                        <button class="btn">
-                            <img class="img--avtive" src="block%201.4/image/chat.svg" alt="Чат">
-                        </button>
-                        <button class="btn">
-                            <img class="img--avtive" src="block%201.4/image/profile.svg" alt="Профиль">
-                        </button>
-                    </div>
-
-                    <div class="contact__mail">
-                        <a class="contact__link-mail contact__link" href="/">mail@cps.com</a>
-                    </div>
-                    <div class="contact__phone">
-                        <a class="contact__link-phone contact__link" href="/">8 800 890 8900</a>
-                    </div>
-                </div>
-
-                <div class="contact__language">
-                    <a class="language__link" href="/">RU</a>
-                    <a class="language__link" href="/">EN</a>
-                    <a class="language__link" href="/">CH</a>
-                </div>
-            </div>
-        </div>
+    <div class="gradient">
+        <div class="line"></div>
+        <h1 class="title-brend">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h1>
     </div>
+
+    <div class="brend-slider swiper-container">
+
+        <div class="brend-slider__wrapper swiper-wrapper">
+
+            <button class="btn-brend slider__item swiper-slide">
+                <a class="brend__link" href="/">
+                    <img class="brand__logo brand__logo-lenovo" src="./img/lenovo.svg" alt="#">
+                    <img class="brand__arrow-icon" src="./img/arrow.svg" alt="#">
+                </a>
+            </button>
+            <button class="btn-brend slider__item swiper-slide">
+                <a class="brend__link" href="/">
+                    <img class="brand__logo brand__logo-samsung" src="./img/samsung.svg" alt="#">
+                    <img class="brand__arrow-icon" src="./img/arrow.svg" alt="#">
+                </a>
+            </button>
+            <button class="btn-brend slider__item swiper-slide">
+                <a class="brend__link" href="/">
+                    <img class="brand__logo brand__logo-apple" src="./img/apple.svg" alt="#">
+                    <img class="brand__arrow-icon" src="./img/arrow.svg" alt="#">
+                </a>
+            </button>
+            <button class="btn-brend slider__item swiper-slide">
+                <a class="brend__link" href="/">
+                    <img class="brand__logo brand__logo-viewSonic" src="./img/viewSonic.svg" alt="#">
+                    <img class="brand__arrow-icon" src="./img/arrow.svg" alt="#">
+                </a>
+            </button>
+            <button class="btn-brend slider__item swiper-slide">
+                <a class="brend__link" href="/">
+                    <img class="brand__logo brand__logo-bosch" src="./img/bosch.svg" alt="#">
+                    <img class="brand__arrow-icon" src="./img/arrow.svg" alt="#">
+                </a>
+            </button>
+            <button class="btn-brend slider__item swiper-slide">
+                <a class="brend__link" href="/">
+                    <img class="brand__logo brand__logo-hp" src="./img/hp.svg" alt="#">
+                    <img class="brand__arrow-icon" src="./img/arrow.svg" alt="#">
+                </a>
+            </button>
+            <button class="btn-brend slider__item swiper-slide">
+                <a class="brend__link" href="/">
+                    <img class="brand__logo brand__logo-acer" src="./img/acer.svg" alt="#">
+                    <img class="brand__arrow-icon" src="./img/arrow.svg" alt="#">
+                </a>
+            </button>
+            <button class="btn-brend slider__item swiper-slide">
+                <a class="brend__link" href="/">
+                    <img class="brand__logo brand__logo-sony" src="./img/sony.svg" alt="#">
+                    <img class="brand__arrow-icon" src="./img/arrow.svg" alt="#">
+                </a>
+            </button>
+            <button class="btn-brend slider__item swiper-slide">
+                <a class="brend__link" href="/">
+                    <img class="brand__logo brand__logo-lenovo" src="./img/lenovo.svg" alt="#">
+                    <img class="brand__arrow-icon" src="./img/arrow.svg" alt="#">
+                </a>
+            </button>
+            <button class="btn-brend slider__item swiper-slide">
+                <a class="brend__link" href="/">
+                    <img class="brand__logo brand__logo-samsung" src="./img/samsung.svg" alt="#">
+                    <img class="brand__arrow-icon" src="./img/arrow.svg" alt="#">
+                </a>
+            </button>
+            <button class="btn-brend slider__item swiper-slide">
+                <a class="brend__link" href="/">
+                    <img class="brand__logo brand__logo-apple" src="./img/apple.svg" alt="#">
+                    <img class="brand__arrow-icon" src="./img/arrow.svg" alt="#">
+                </a>
+            </button>
+
+
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="brend-icon">
+        <label class="brend-label">
+            <button class="btn-icon" data-button="true">
+                <a class="link-icon"></a>
+            </button>
+            <span class="brend-text">Скрыть</span>
+        </label>
+    </div>
+
 </div>
 
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
 
